@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Spartan", sans-serif;
+      }
+      h1 {
+        font-size: 45px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 15px;
+        padding-top: 5px;
+        font-weight: 500;
+        color: hsl(303, 10%, 53%);
+      }
+      .purp-color {
+        color: hsl(300, 43%, 22%);
+      }
+      .pink-text {
+        color: hsl(300, 24%, 96%);
+      }
+      body {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./images/bg-pattern-top-desktop.svg),
+          url(./images/bg-pattern-bottom-desktop.svg);
+        background-position: left top, right bottom;
+        background-repeat: no-repeat, no-repeat;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-areas:
+          "intro rating"
+          "user user";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 45% 55%;
+        height: 80%;
+        width: 70%;
+      }
+      .intro {
+        grid-area: intro;
+      }
+      .rating {
+        padding-left: 20px;
+        grid-area: rating;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .user {
+        grid-area: user;
+        padding: 40px 0px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .rating-content {
+        padding: 15px 20px;
+        width: 90%;
+        margin: 10px 0px;
+        font-size: 14px;
+        background-color: hsl(300, 24%, 96%);
+        font-weight: 700;
+        color: hsl(300, 43%, 22%);
+      }
+      .reviews {
+        align-self: flex-start;
+      }
+      .reportguru {
+        align-self: center;
+      }
+      .besttech {
+        align-self: flex-end;
+      }
+      .user-card {
+        border-radius: 10px;
+        width: 31%;
+        padding: 20px;
+        background-color: hsl(300, 43%, 22%);
+        color: white;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      .colton {
+        align-self: flex-start;
+      }
+      .irene {
+        align-self: center;
+      }
+      .anne {
+        align-self: flex-end;
+      }
+      .verified {
+        color:hsl(333, 80%, 67%);
+      }
+      .name-image-wrapper {
+        padding-bottom: 20px;
+        overflow: auto;
+      }
+      .user-image {
+        border-radius: 50%;
+        display: inline-block;
+        float: left;
+        padding-right: 10px;
+      }
+      .name {
+        display: inline-block;
+        padding-top: 20px;
+      }
+      .attribution {
+        position: absolute;
+        bottom: 0px;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .star {
+        padding: 0px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="intro">
+        <h1 class="purp-color">10,000+ of our users love our products.</h1>
+        <p class="">
+          We only provide great products combined with excellent customer
+          service. See what our satisfied customers are saying about our
+          services.
+        </p>
+      </div>
+      <div class="rating">
+        <div class="rating-content reviews">
+          <img class="star" src="./images/icon-star.svg" alt="" /><img
+            class="star"
+            src="./images/icon-star.svg"
+            alt=""
+          /><img class="star" src="./images/icon-star.svg" alt="" /><img
+            class="star"
+            src="./images/icon-star.svg"
+            alt=""
+          /><img
+            class="star"
+            src="./images/icon-star.svg"
+            alt=""
+          />&nbsp;&nbsp;Rated 5 Stars in Reviews
+        </div>
+        <div class="rating-content reportguru">
+          <img class="star" src="./images/icon-star.svg" alt="" /><img
+            class="star"
+            src="./images/icon-star.svg"
+            alt=""
+          /><img class="star" src="./images/icon-star.svg" alt="" /><img
+            class="star"
+            src="./images/icon-star.svg"
+            alt=""
+          /><img
+            class="star"
+            src="./images/icon-star.svg"
+            alt=""
+          />&nbsp;&nbsp;Rated 5 Stars in Report Guru
+        </div>
+        <div class="rating-content besttech">
+          <img class="star" src="./images/icon-star.svg" alt="" /><img
+            class="star"
+            src="./images/icon-star.svg"
+            alt=""
+          /><img class="star" src="./images/icon-star.svg" alt="" /><img
+            class="star"
+            src="./images/icon-star.svg"
+            alt=""
+          /><img
+            class="star"
+            src="./images/icon-star.svg"
+            alt=""
+          />&nbsp;&nbsp;Rated 5 Stars in BestTech
+        </div>
+      </div>
+      <div class="user">
+        <div class="user-card colton">
+          <div class="name-image-wrapper">
+            <img class="user-image" src="./images/image-colton.jpg" alt="" />
+            <div class="name">
+              <h2>Colton Smith</h2>
+              <p class="verified">Verified Buyer</p>
+            </div>
+          </div>
+          <div class="user-content">
+            "We needed the same printed design as the one we had ordered a week
+            prior. Not only did they find the original order, but we also
+            received it in time. Excellent!"
+          </div>
+        </div>
+        <div class="user-card irene">
+          <div class="name-image-wrapper">
+            <img src="./images/image-irene.jpg" alt="" class="user-image" />
+            <div class="name">
+              <h2>Irene Roberts</h2>
+              <p class="verified">Verified Buyer</p>
+            </div>
+          </div>
+          <div class="user-content">
+            "Customer service is always excellent and very quick turn around.
+            Completely delighted with the simplicity of the purchase and the
+            speed of delivery."
+          </div>
+        </div>
+        <div class="user-card anne">
+          <div class="name-image-wrapper">
+            <img src="./images/image-anne.jpg" alt="" class="user-image" />
+            <div class="name">
+              <h2>Anne Wallace</h2>
+              <p class="verified">Verified Buyer</p>
+            </div>
+          </div>
+          <div class="user-content">
+            "Put an order with this company and can only praise them for the
+            very high standard. Will definitely use them again and recommend
+            them to everyone!"
+          </div>
+        </div>
+      </div>
+    </div> 
+  </body>
+</html>
